@@ -9,9 +9,9 @@ console.log(typeof 'Bolanle')
 // 2. Using double quotation marks (" ")
 // 3. Using back-ticks   (` `)
 
-console.log(typeof "Bolanle")
+console.log(typeof "Bolanle");
 
-console.log(typeof `Bolanle`)
+console.log(typeof `Bolanle`);
 
 // Numbers
 // Types of numbers
@@ -314,3 +314,108 @@ console.log(num1.toString())
 
 
 
+// CLASS WORK
+// 1. Create a variable named greeting and assign the string "Hello World" to it. Log its type to the console.
+
+// 2. Create an array named languages containing the strings 'JavaScript', 'Python', and 'C++'.
+
+//    - Add 'Java' to the end of the array.
+
+//    - Add 'HTML' to the beginning of the array.
+
+//    - Print the final array.
+
+// 3. Given the array const nums = [1, 2, 3, 4, 5];
+
+//    - Use the splice() method to remove elements at index 2 and 3, and insert the strings 'a' and 'b' in their place.
+
+//    -Log the final array.
+
+//4. Write a JavaScript expression that calculates the area of a triangle with a base of 10 and height of 5. Use the formula:
+
+//     - Area = 1/2 × base × height
+
+//     - Print the result to the console.
+
+//5. Convert the number 2025 to a string and log its type to the console to confirm the conversion.
+
+
+// SOLUTION 
+
+// 1. 
+let greeting = 'hello world'
+console.log(typeof greeting)
+
+//2. 
+const languages = ['JavaScript', 'Python', 'C++']
+
+languages.push('Java')
+languages.unshift('HTML')
+console.log(languages)
+
+// 3. 
+
+const nums = [1, 2, 3, 4, 5];
+nums.splice(2,2,'a', 'b')
+console.log(nums)
+
+//4. 
+let base = 10
+let height = 5
+
+const area = 1/2 * base * height
+console.log(area)
+
+//5.
+let num = 2025
+console.log(typeof num.toString())  // 'string'
+
+
+// Functions in JavaScript
+
+function  add(num1, num2){
+    return num1 + num2
+}
+
+
+let answer = add(5,10)
+console.log(answer)
+
+// A function that says 'Hello world!
+
+function sayHello(){
+    console.log('Hello World')
+}
+
+sayHello()
+
+// Write a funtion that takes the name of a person as argument and then return 'Hello' and the person's name.
+
+function greetPerson(name){
+    console.log(`Hello ${name}`) // Interpolation
+}
+
+
+greetPerson('Tunde')
+greetPerson('Wale')
+
+// A function that converts words to uppercase
+
+function convertToUpper(word){
+    return word.toUpperCase()
+}
+
+
+let output = convertToUpper('Welcome to this JavaScript class')
+
+console.log(output)
+
+
+// Function that calculates the area of a triangle
+
+function areaOfTriangle(base, height){
+    let area = 1/2 * base * height
+    return `Area = ${area} cm^2`
+}
+
+console.log(areaOfTriangle(4,5))
