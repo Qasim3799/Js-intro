@@ -419,3 +419,169 @@ function areaOfTriangle(base, height){
 }
 
 console.log(areaOfTriangle(4,5))
+
+
+// Assignment (Solution)
+
+// 1. Create a function named sayMyName that takes one parameter, name. It then uses string interpolation to print:
+// My name is <name>
+
+// Example:
+
+// sayMyName('Bolaji')  
+// // Output: My name is Bolaji
+
+// 2. Create a function called greetUser that takes two parameters: firstName and language. It should then print:
+// "Hello <firstName>, welcome to the <language> class!"
+// using interpolation.
+
+// 3.  Write a function rectanglePerimeter that takes the length and width of a rectangle and returns the perimeter using interpolation.
+
+// Perimeter=2×(length+width)
+
+// Example output:
+// "The perimeter is 30 cm"
+
+
+//1. 
+
+function sayMyName(name){
+    return `My name is ${name}`
+}
+
+
+console.log(sayMyName('Tunde'))
+
+//2. 
+
+function greetUser(name, language){
+    return `Hello ${name}, welcome to the ${language} class!`
+}
+
+console.log(greetUser('Bola', 'JavaScript'))
+
+
+
+//3. 
+function rectanglePerimeter(length, width){
+    let perimeter = 2 * (length + width)
+    return `The perimeter is ${perimeter} cm`
+}
+
+console.log(rectanglePerimeter(10, 5))
+
+
+// Anonymous Functions
+
+const sayHi = function (name){
+    return `Hi ${name}!`
+}
+
+
+console.log(sayHi('Bolu'))
+
+
+const triangleArea = function (base, height){
+    const area = 1/2 * base * height
+    return `The area = ${area} cm squared`
+}
+
+
+console.log(triangleArea(4,5))
+
+
+// Classwork 
+//1.  Write a function that takes an array as arguement and then returns the length of the array 
+
+const arrayLength = function (arr){
+    return arr.length
+}
+
+let names = ['Bola', 'Tola', 'Fola']
+
+console.log(arrayLength(names))     //output -> 3
+
+
+//2. Write a function called 'isEven' that takes a number and returns 'true' if it's even and 'false' if not.
+
+const isEven = function (num){
+    return num % 2 == 0
+}
+
+
+console.log(isEven(5))   // false
+console.log(isEven(4))  // true
+
+
+// 3. Write a function that converts temperature in celcius to Kelvin
+
+const celciusToKelvin = function (temp){
+    kelvin = temp + 273
+    return kelvin
+}
+
+console.log(celciusToKelvin(100))
+
+
+
+// OPERATORS IN JS
+// 1. Arithmetic Operator e.g +, -, *, /, %, ** etc.
+// 2. Assignment Operator
+// 3. Comparison Operator
+// 4. Logical Operator
+// 5. Bitwise Operator 
+
+
+
+//2. Assignment Operators e.g. =, +=, -=, *=, /=
+
+let x = 5
+x += 1  // x = x + 1  => 6
+x -= 1  // x = x - 1  => 4
+x *= 2  // x = x * 2  => 10
+
+
+//3. Comparison Operator  e.g. <, >, <=, >=, ==, ===, !=
+
+3 > 2  // true
+3 < 2  // false
+
+5 >= 5 // true
+4 <= 3  // false
+
+4 == 4 // true    
+4 == '4'  // true  - only compares value but not the datatype
+
+4 === '4'  // false  // compares values and type (it is called strict comparison)
+
+
+// 4. Logical Operator e.g. && (and), || (or), ! (not)
+
+// Logical and -  &&
+true && true  // true
+true && false // false
+false && true // false
+false && false // false
+
+// Logical or - ||
+
+true || true  // true
+true || false // true
+false || true // true
+false || false // false
+
+// Logical not - !
+
+!true // false
+!false // true
+
+
+
+// conversion from Decimal (base 10) to Binary (base 2)
+
+let decimalNumber = 10
+decimalNumber.toString(2)  // 1010
+
+
+// conversion from Binary to Decimal
+console.log(parseInt('1010', 2))  //10
