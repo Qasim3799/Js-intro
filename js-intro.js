@@ -532,7 +532,6 @@ console.log(celciusToKelvin(100))
 // 5. Bitwise Operator 
 
 
-
 //2. Assignment Operators e.g. =, +=, -=, *=, /=
 
 let x = 5
@@ -585,3 +584,112 @@ decimalNumber.toString(2)  // 1010
 
 // conversion from Binary to Decimal
 console.log(parseInt('1010', 2))  //10
+
+
+// Example: convert 300 (decimal) to binary (base 2)
+
+num = 300
+console.log(num.toString(2))   // 100101100
+
+
+
+console.log(parseInt('100101100', 2))   //300
+
+// conversion from decimal to hexadecimal (base 16)
+//0, 1,2,3,4,5,6,7,8,9,a,b,c,d,e,f
+
+num=31341
+console.log(num.toString(16))  //7a6d
+
+
+//1. Bitwise operators -  & ()
+
+// 12 & 23   => 4
+
+num1 = 12
+let num2 = 23
+
+num1.toString(2)   // 1100
+num2.toString(2)   // 10111
+
+//   01100
+//   10111
+//--------------
+//   00100
+
+console.log(parseInt('100', 2))   // 4
+
+
+// 2. Bitwise or -  |
+
+// 12 | 23  => 31
+
+num1 = 12
+num2 = 23
+
+//   01100
+//   10111
+//--------------
+//   11111
+
+console.log(parseInt('11111', 2))    // 31
+
+
+// 3. Bitwise XOR -  ^
+num1 = 12
+num2 = 23
+
+//   01100
+//   10111
+//--------------
+//   11011
+
+console.log(parseInt('11011', 2))    // 27
+
+4. // Bitwise left-shift <<
+
+// 23 << 3    => 184
+
+num1 = 23
+//   10111    (23 in binary)
+//   10111000
+
+console.log(parseInt('10111000', 2))   // 184
+
+
+5. //Bitwise right shift >>
+23 >> 3  // 2
+num1 = 23
+//   10111    (23 in binary)
+// 10
+
+console.log(parseInt('10' , 2))
+
+
+// Condition Statements in JS
+
+// 1. if statements
+
+let number = 5
+
+if(number > 5){
+    console.log('Number is greater than 5')
+}else{
+    console.log('Number is not greater than 5')
+}
+
+
+// or
+
+if (number > 5){
+    console.log('Number is greater than 5')
+}
+else if(number === 5){
+    console.log('Number is equal to 5')
+}
+else{
+    console.log('Number is less than 5')
+}
+
+
+
