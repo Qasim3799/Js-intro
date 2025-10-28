@@ -693,3 +693,110 @@ else{
 
 
 
+// Anonymous Functions / Callback functions
+
+
+sayHello = function (name){
+    return `Hello ${name}`
+}
+
+
+//   Arrow Functions
+
+const checkEven = (num) => {
+    if(num % 2 == 0){
+        return true
+    }
+    else{
+        return false
+    }
+}
+
+console.log(checkEven(5))   // false
+
+console.log(checkEven(4))   // true
+
+//
+
+const getGrade = (score) => {
+    if(score > 100 || score < 0){
+        return 'Score can only be between 0 - 100'
+    }   
+
+    else if(score >= 70){
+        return 'A';
+    }
+    else if(score >= 60){
+        return 'B';
+    }
+    else if(score >= 50){
+        return 'C';
+    }
+    else if(score >= 45){
+        return 'D';
+    }
+    else if(score >= 40){
+        return 'E';
+    }
+    else if(score >= 0){
+        return 'F';
+    }
+    else{
+        return 'Invalid Input'
+    }
+}
+
+
+
+let numbers = [2,3,1,5,6,2]
+console.log(numbers.sort())
+
+// callback fucntions
+
+let descendingOrder = numbers.sort((a,b) => {
+    return b - a
+})
+
+console.log(descendingOrder)
+
+
+//forEach() map(), filter() and reduce()
+
+names = ['bola', 'bolu', 'ola', 'wole']
+
+// using arrow function as callback
+names.forEach((name) => {
+    console.log(`Ade${name}`)
+})
+
+// OR
+
+// using the function keyword as callback
+names.forEach(function (name){
+    console.log(`Ade${name}`)
+})
+
+
+
+
+// Map
+students = ['mide', 'wale', 'dele', 'juwon']
+
+students.map(function (stud){
+    console.log(`Ola${stud}`)
+})
+
+
+//Using arrow function
+
+students.map((stud) => {
+    console.log(`Ola${stud}`)
+})
+
+
+
+// filter
+
+students.filter((stud) => {
+    return stud.includes('e')
+})
