@@ -800,3 +800,58 @@ students.map((stud) => {
 students.filter((stud) => {
     return stud.includes('e')
 })
+
+
+
+
+
+// Objects 
+let student = {
+    name: 'Bola',
+    age: 15,
+    gender: 'Female',
+    nationality: 'Nigerian'
+}
+
+console.log(student.name)   // 'Bola'
+console.log(student.age)    // 15
+console.log(typeof student)  // object
+
+
+// Array of Objects
+
+students = [
+    {name: 'Bola', age: 15},
+    {name: 'Daniel', age: 20},
+    {name: 'Malik', age: 12}
+]
+
+students.forEach((item) => {
+    console.log(`This is ${item.name}. ${item.name} is ${item.age} years old`)
+})
+
+// This is Bola. Bola is 15 years old
+// This is Daniel. Daniel is 20 years old
+// This is Malik. Malik is 12 years old
+
+
+
+// Filtering an Array
+
+names = ['Olamide', 'Akintunde', 'Babatunde', 'Adeola', 'olaide', 'Jolaade']
+
+
+output = names.filter((item) => {
+    return item.startsWith('Ade')
+})
+
+console.log(output)   // ['Adeola']
+
+
+output = names.filter((item) => {
+
+    // return item.toLowerCase().includes('ade')
+    return item.includes('Ade') || item.includes('ade')  
+})
+
+console.log(output)  // [ ['Adeola', 'Jolaade']]
