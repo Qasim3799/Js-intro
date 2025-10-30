@@ -855,3 +855,55 @@ output = names.filter((item) => {
 })
 
 console.log(output)  // [ ['Adeola', 'Jolaade']]
+
+
+
+
+// Date Object in JS
+
+const date = new Date()     // creating the date object 
+
+console.log(date)      // Thu Oct 30 2025 10:05:42 GMT+0100 (West Africa Standard Time)
+
+date.getDate()    // 30   - it returns the day of the month
+date.getMonth()   // 9    - it starts counting from 0 so october is 9 instead of 10
+
+date.getFullYear()    // returns the current year
+
+date.getHours()    // 10  - returns the current hour of the day
+
+date.getMinutes()      // 5   returns the current minute
+
+date.getSeconds()   // 42   returns the current seconds
+
+date.getMilliseconds()  // 720  returns the current milliseconds
+
+
+date.getTime()   // 1761815734191  - returns the number of milliseconds that has passed since January 1, 1970
+
+date.toLocaleDateString()  // '10/30/2025'
+
+date.toLocaleTimeString()  // '10:18:50 AM'
+
+date.toLocaleString()   // '10/30/2025, 10:21:36 AM'
+
+
+let date1 = new Date('2025-10-12')
+
+let date2 = new Date('2025-10-30')
+
+console.log(date2 - date1)  //1555200000  in milliseconds
+
+
+// function to convert milliseconds to days
+
+const millisToDays = millis => {
+    return millis / (1000 * 60 * 60 * 24)
+}
+
+
+let daysDiff = millisToDays(date2 - date1) 
+console.log(daysDiff)    // 18
+
+
+
