@@ -907,3 +907,125 @@ console.log(daysDiff)    // 18
 
 
 
+
+
+// Events  and Event Listeners in JS
+
+// Examples of events
+// 1. click event
+// 2. mouse event  
+// 3. Keyboard event
+// 4. Submit event etc.
+
+
+
+// event listeners 
+//  onsubmit
+// onclick
+// onmouseenter
+// onmouseover 
+// onkeydown
+// onkeyup etc.
+
+
+
+
+
+// Ternary Operators
+
+x = 10
+
+// if(x == 0){
+//   console.log('zero')
+// }
+// else if(x % 2 == 1){
+//     console.log('Odd')
+// }else{
+//     console.log('Even')
+// }
+
+
+// let res = x % 2 == 1 ? 'Odd' : 'Even'
+
+let res = x % 2 == 1 ? 'Odd' : x === 0 ? 'Zero' : 'Even'
+
+console.log(res)
+
+
+// Object destructuring
+
+student = {
+    studentName: 'Adewale Solomon',
+    studentAge: 15,
+    gender: 'Male',
+}
+
+// console.log(student.studentName)
+// console.log(student.studentAge)
+// console.log(student.gender)
+
+
+// using object destructuring
+
+const {studentName, studentAge, gender} = student
+
+console.log(studentName)
+console.log(studentAge)
+console.log(gender)
+
+
+
+let product = {
+    productName: 'Gucci Designer Bag',
+    maker: 'Gucci',
+    color: 'Army Green',
+    price: 150000,
+}
+
+// using object destructuring
+
+const {productName, color} = product
+
+console.log(color)
+console.log(productName)
+
+
+
+
+// Array destructuring
+
+const people = ['Michael', 'Malik', 'Tunde', 'Olumide']
+
+console.log(people[0])     // Michael
+console.log(people[2])        // Tunde
+console.log(people.at(-1))     // Olumide
+console.log(people[3])     // Olumide
+
+
+// Using array destructuring
+
+const [firstPerson, secondPerson, thirdPerson, fouthPerson] = people
+
+console.log(firstPerson)    // Michael
+console.log(secondPerson)    // Malik
+console.log(thirdPerson)    // Tunde
+console.log(fouthPerson)    // Olumide
+
+
+
+
+// Example
+
+students = [
+    {name: 'Akano Boluwatife', age: 15},
+    {name: 'Basit Lawal', age: 14},
+    {name: 'Daniel Owolabi', age: 12},
+]
+
+
+students.forEach((student) => {
+    const {name, age} = student
+    
+    console.log(`Name: ${name}`)
+    console.log(`Age: ${age}`)
+})
